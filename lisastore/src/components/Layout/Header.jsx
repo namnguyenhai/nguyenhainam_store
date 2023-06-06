@@ -1,6 +1,4 @@
 import { styled } from "styled-components";
-import LeftLimb from "images/Header/lefttree.svg";
-import RightLimb from "images/Header/right_tree.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +6,8 @@ import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import { TextFormat } from "components/Text";
 import { Button } from "components/Button";
 import WomenContent from "images/Header/woman_content.svg";
-
+import LeftLimb from "images/Header/lefttree.svg";
+import RightLimb from "images/Header/right_tree.svg";
 const StyledHear = styled.div`
     background-color: #F0F0F0;
     height: 100vh;

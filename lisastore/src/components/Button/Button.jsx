@@ -15,7 +15,10 @@ const StyledButton = styled.button`
 export const Button = ({width, height, radius,bgcolors, border,iconname,children,stylefontawe}) => {
     return <StyledButton width={width} height={height} radius={radius} bgcolors={bgcolors} border={border} stylefontawe={stylefontawe}>
         {/* <FontAwesomeIcon className="fontawe"  icon={iconname} /> */}
-        <FontAwe color={stylefontawe.color} size={stylefontawe.size} icon={iconname}></FontAwe>
+        { stylefontawe ?
+            <FontAwe color={stylefontawe.color} size={stylefontawe.size} icon={iconname}></FontAwe>
+            :null
+        }
         {children}
     </StyledButton>
 }
