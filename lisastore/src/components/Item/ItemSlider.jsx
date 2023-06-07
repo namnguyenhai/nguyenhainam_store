@@ -1,56 +1,72 @@
-import React, { useState, useRef} from "react";
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import { styled } from "styled-components";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-export const MultipleItems = () => {
-    const ref = useRef({});
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { Item } from "./Item";
+import { Card } from "components/Card";
+const StyledCouseralItem = styled(Slider)`
 
-    const next = () => {
-      ref.current.slickNext();
-    };
-  
-    const previous = () => {
-      ref.current.slickPrev();
-    };
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    };
+  .slick-prev, .slick-next {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 15px !important;
+  }
+
+  .slick-prev:before, .slick-next:before  {
+    content: '' !important;
+  }
+
+
+`
+export const MultipleItems = () => {
+  function PrevArrow(props) {
+    const { className, onClick } = props;
     return (
-      <div>
-        <h2> Multiple items </h2>
-        <Slider ref={ref} {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div>
-        </Slider>
+      <div
+        className={className}
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faChevronLeft} color="#000"
+          size="xl" />
       </div>
     );
   }
+  function NextArrow(props) {
+    const { className, onClick } = props;
+    return (
+      <div
+        className={className}
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faChevronRight} color="#000"
+          size="xl" />
+      </div>
+    );
+  }
+
+  const settings = {
+    centerMode: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
+  return <StyledCouseralItem  {...settings}>
+
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+
+  </StyledCouseralItem>
+}

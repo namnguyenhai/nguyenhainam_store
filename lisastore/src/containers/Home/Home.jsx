@@ -26,14 +26,14 @@ const StyledHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
     .home_brand{
         width: 80%;
         display: flex;
         justify-content: space-around;
         height: 300px;
     }
-    .recomend_home{
+    .home_recomend{
         width: 80%;
         height: 700px;
         display: flex;
@@ -99,10 +99,10 @@ const StyledHome = styled.div`
             }
         }
     }
-    .subscribe{
+    .home_subscribe{
         width: 80%;
     }
-    .banner{
+    .home_banner{
         width: 100%;
         height: 800px;
         background-image: url(${Zara1}),url(${RedWoman});
@@ -125,10 +125,20 @@ const StyledHome = styled.div`
             gap: 20%;
         }
     }
-    .bestseller{
-        width: 100%;
+    .home_bestseller{
+        width: 80%;
         height: 500px;
     }
+    .home_follow_products{
+        width: 100%;
+        height: 500px;
+        background-color: #F0F0F0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
 
 `
 export const Home = () => {
@@ -140,7 +150,7 @@ export const Home = () => {
             <img src={Furni} alt="" />
             <img src={Travell} alt="" />
         </div>
-        <div className="recomend_home">
+        <div className="home_recomend">
             <div className="recomend_left">
                 <TextFormat size={"34px"} fontfam={"Roboto"} color={"#000000"} weight={400}>Explore new and popular styles</TextFormat>
             </div>
@@ -162,14 +172,14 @@ export const Home = () => {
                         <ImageBackground bgimage={RedClothes}></ImageBackground>
                     </div>
                     <div className="bottomright">
-                        <ImageBackground  bgimage={WhiteTShirt}></ImageBackground>
+                        <ImageBackground bgimage={WhiteTShirt}></ImageBackground>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="subscribe">
+        <div className="home_subscribe">
             <Item tittles={"Or subscribe to the newsletter"} buttonname={"Filter"}>
-                <Card></Card>
+                <Card status={"red"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"25%"} ></Card>
                 <Card></Card>
                 <Card></Card>
                 <Card></Card>
@@ -179,7 +189,7 @@ export const Home = () => {
                 <Card></Card>
             </Item>
         </div>
-        <div className="banner">
+        <div className="home_banner">
             <div className="banner_content">
                 <img src={Zara2} alt="" />
                 <TextFormat color={"#FF6F61"} size={"26px"} weight={400}>
@@ -189,15 +199,15 @@ export const Home = () => {
                     <TextFormat color={"1E2832"} size={"29px"} weight={400}>See Collection</TextFormat>
                 </Button>
             </div>
-        </div> */}
-        {/* <div className="bestseller">
-            <Item tittles={"Best sellers"} buttonname={"Show All"}>
-                
-            </Item>
-        </div> */}
-        <div className="bestseller">
-            <MultipleItems></MultipleItems>
         </div>
-        
+        <div className="home_bestseller">
+            <MultipleItems></MultipleItems>
+        </div> */}
+        <div className="home_follow_products">
+            <TextFormat color={"#000000"} size={"50px"} weight={500}>Follow products and discounts on Instagram</TextFormat>
+            <Card></Card>
+            <TextFormat color={"#FF6F61"} size={"28px"} weight={500}>@lisa.official</TextFormat>
+        </div>
+
     </StyledHome>
 }

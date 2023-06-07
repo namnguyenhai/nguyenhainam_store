@@ -9,7 +9,7 @@ const StyledShowItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     gap: 30px;
     .flex_row_menu{
         display: flex;
