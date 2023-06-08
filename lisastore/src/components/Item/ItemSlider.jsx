@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { Item } from "./Item";
 import { Card } from "components/Card";
+import Cardimage1 from "images/Content/cardimage1.svg";
 const StyledCouseralItem = styled(Slider)`
 
   .slick-prev, .slick-next {
@@ -58,15 +59,22 @@ export const MultipleItems = () => {
     slidesToScroll: 1
   };
   return <StyledCouseralItem  {...settings}>
-
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+      {/* <Card></Card>
       <Card></Card>
       <Card></Card>
       <Card></Card>
       <Card></Card>
       <Card></Card>
       <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      <Card></Card> */}
 
   </StyledCouseralItem>
 }

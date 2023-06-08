@@ -20,6 +20,9 @@ import RedClothes from "images/Content/red_clothes.svg";
 import RedWoman from "images/Content/redwomen.svg";
 import Zara1 from "images/Content/zara1.svg";
 import Zara2 from "images/Content/zara2.svg";
+
+
+import Cardimage1 from "images/Content/cardimage1.svg";
 const StyledHome = styled.div`
     width: 100%;
     /* height: 900px; */
@@ -30,8 +33,14 @@ const StyledHome = styled.div`
     .home_brand{
         width: 80%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items:  center;
         height: 300px;
+        /* .home_brand_div{
+            width: 15%;
+            height: 50%;
+            background-color: black;
+        } */
     }
     .home_recomend{
         width: 80%;
@@ -143,8 +152,10 @@ const StyledHome = styled.div`
 `
 export const Home = () => {
     return <StyledHome>
-        {/* <div className="home_brand">
+        <div className="home_brand">
+
             <img src={Graphic} alt="" />
+            {/* <Card cardimage={Graphic} width={"100%"} height={"100%"}></Card> */}
             <img src={Salva} alt="" />
             <img src={Golden} alt="" />
             <img src={Furni} alt="" />
@@ -179,14 +190,22 @@ export const Home = () => {
         </div>
         <div className="home_subscribe">
             <Item tittles={"Or subscribe to the newsletter"} buttonname={"Filter"}>
-                <Card status={"red"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"25%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
+
+                {/* <Card></Card>
                 <Card></Card>
                 <Card></Card>
                 <Card></Card>
                 <Card></Card>
                 <Card></Card>
-                <Card></Card>
-                <Card></Card>
+                <Card></Card> */}
             </Item>
         </div>
         <div className="home_banner">
@@ -202,10 +221,10 @@ export const Home = () => {
         </div>
         <div className="home_bestseller">
             <MultipleItems></MultipleItems>
-        </div> */}
+        </div>
         <div className="home_follow_products">
             <TextFormat color={"#000000"} size={"50px"} weight={500}>Follow products and discounts on Instagram</TextFormat>
-            <Card></Card>
+            <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
             <TextFormat color={"#FF6F61"} size={"28px"} weight={500}>@lisa.official</TextFormat>
         </div>
 
