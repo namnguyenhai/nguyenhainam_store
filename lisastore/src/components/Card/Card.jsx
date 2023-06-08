@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-
 import { ImageBackground } from "components/Image";
 import { TextFormat } from "components/Text";
+
 const StyledCard = styled.div`
     background-color: #FFFFFF;
     /* height: 500px;
@@ -39,20 +39,19 @@ const StyledCard = styled.div`
         justify-content: space-between;
     }
 `
-// const data = [
-//     {
-//         width:"25%",
-//         height:"500px",
-//         status: "sales",
-//         cardinfo: {
-//             nameitem: "Adicolor classiscs joggers",
-//             typeitem: "dress",
-//             priceitem: "$2"
-//         }
-//     }
-// ]
+const data = [
+    {
+        status: "sales",
+        cardimage: "",
+        cardinfo: {
+            nameitem: "Adicolor classiscs joggers",
+            typeitem: "dress",
+            priceitem: "$2"
+        }
+    }
+]
 export const Card = ({ width, height, cardimage, cardinfo, status }) => {
-
+    
     return <StyledCard height={height} width={width} status={status} cardinfo={cardinfo} cardimage={cardimage}>
         <div className="card_image">
             <ImageBackground bgimage={cardimage} >

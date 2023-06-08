@@ -20,9 +20,10 @@ import RedClothes from "images/Content/red_clothes.svg";
 import RedWoman from "images/Content/redwomen.svg";
 import Zara1 from "images/Content/zara1.svg";
 import Zara2 from "images/Content/zara2.svg";
-
-
 import Cardimage1 from "images/Content/cardimage1.svg";
+
+
+import { useDispatch, useSelector } from "react-redux";
 const StyledHome = styled.div`
     width: 100%;
     /* height: 900px; */
@@ -151,6 +152,9 @@ const StyledHome = styled.div`
 
 `
 export const Home = () => {
+
+    const cardval = useSelector((state) => state.card);
+    console.log("carvalis:",cardval)
     return <StyledHome>
         <div className="home_brand">
 
@@ -190,22 +194,18 @@ export const Home = () => {
         </div>
         <div className="home_subscribe">
             <Item tittles={"Or subscribe to the newsletter"} buttonname={"Filter"}>
+                {/* <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
-                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
-                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
-
-                {/* <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card> */}
+                <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card> */}
+{/* 
+                {
+                    cardval.map((values))
+                } */}
             </Item>
         </div>
         <div className="home_banner">
