@@ -4,9 +4,10 @@ const StyledImageBackground = styled.div`
     width: 100%;
     height: 100%;
     background-image: url(${props=> props.bgimage});
-    background-size: ${props => props.bg_sizestyle != "cover" ? props.bg_sizestyle : "cover"};
-    background-repeat: ${props => props.bg_repeat != "no-repeat" ? props.bg_repeat : "no-repeat"};
-    background-position: ${props => props.bg_position != "center" ? props.bg_position : "center"} ;
+    background-size: ${props => props.bg_sizestyle  ? props.bg_sizestyle : "cover"};
+    background-repeat: ${props => props.bg_repeat ? props.bg_repeat : "no-repeat"};
+    /* background-repeat: no-repeat; */
+    background-position: ${props => props.bg_position ? props.bg_position : "center"} ;
     
 `
 

@@ -1,3 +1,5 @@
-export const card = () => {
-    
+export const card = {
+    state:{
+        
+    }
 }
