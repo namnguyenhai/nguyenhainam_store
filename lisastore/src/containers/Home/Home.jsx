@@ -154,7 +154,10 @@ const StyledHome = styled.div`
 export const Home = () => {
 
     const cardval = useSelector((state) => state.card);
+    const cardarr = cardval["listdata"];
     console.log("carvalis:",cardval)
+    console.log("acess:",cardval["listdata"]);
+    console.log("array",Object.values(cardval));
     return <StyledHome>
         <div className="home_brand">
 
@@ -202,10 +205,10 @@ export const Home = () => {
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card> */}
-{/* 
+
                 {
-                    cardval.map((values))
-                } */}
+                    cardarr.map((values,i) => (<Card key={i} cardimage={values.cardimage} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>))
+                }
             </Item>
         </div>
         <div className="home_banner">

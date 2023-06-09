@@ -2,7 +2,7 @@ import Cardimage1 from "images/Content/cardimage1.svg";
 const data = [
     {
         status: "sales",
-        cardimage: "",
+        cardimage: Cardimage1,
         cardinfo: {
             nameitem: "Adicolor classiscs joggers",
             typeitem: "dress",
@@ -11,7 +11,7 @@ const data = [
     },
     {
         status: "sales",
-        cardimage: "",
+        cardimage: Cardimage1,
         cardinfo: {
             nameitem: "Adicolor classiscs joggers",
             typeitem: "dress",
@@ -20,7 +20,7 @@ const data = [
     },
     {
         status: "sales",
-        cardimage: "",
+        cardimage: Cardimage1,
         cardinfo: {
             nameitem: "Adicolor classiscs joggers",
             typeitem: "dress",
@@ -29,7 +29,7 @@ const data = [
     },
     {
         status: "sales",
-        cardimage: "",
+        cardimage: Cardimage1,
         cardinfo: {
             nameitem: "Adicolor classiscs joggers",
             typeitem: "dress",
@@ -38,7 +38,7 @@ const data = [
     },
     {
         status: "sales",
-        cardimage: "",
+        cardimage: Cardimage1,
         cardinfo: {
             nameitem: "Adicolor classiscs joggers",
             typeitem: "dress",
@@ -47,13 +47,32 @@ const data = [
     },
     {
         status: "sales",
-        cardimage: "",
+        cardimage: Cardimage1,
+        cardinfo: {
+            nameitem: "Adicolor classiscs joggers",
+            typeitem: "dress",
+            priceitem: "$2"
+        }
+    },
+    {
+        status: "sales",
+        cardimage: Cardimage1,
+        cardinfo: {
+            nameitem: "Adicolor classiscs joggers",
+            typeitem: "dress",
+            priceitem: "$2"
+        }
+    },
+    {
+        status: "sales",
+        cardimage: Cardimage1,
         cardinfo: {
             nameitem: "Adicolor classiscs joggers",
             typeitem: "dress",
             priceitem: "$2"
         }
     }
+   
 ]
 export const card = {
     state: {
@@ -71,9 +90,9 @@ export const card = {
     effects: (dispath)=>({
 
     }),
-    selectors: (slice,createSelector) => ({
-        selectCount(){
-            return slice(state => state.count);
-        }
-    })
+    // selectors: (slice,createSelector) => ({
+    //     selectCount(){
+    //         return slice(state => state.count);
+    //     }
+    // })
 }
