@@ -8,7 +8,8 @@ function App() {
     <BrowserRouter >
       <PrimaryLayout>
         <Routes>
-          <Route path='/nguyenhainam_store' element={<Home></Home>}></Route>
+          <Route path='*' element={<Home></Home>}></Route>
+
         </Routes>
       </PrimaryLayout>
     </BrowserRouter>
