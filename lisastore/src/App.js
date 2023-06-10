@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import Home from 'containers/Home';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename={window.location.pathname || ''}>
       <PrimaryLayout>
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
