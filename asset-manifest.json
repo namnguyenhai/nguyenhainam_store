@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/nguyenhainam_store/static/css/main.123abefe.css",
+    "main.js": "/nguyenhainam_store/static/js/main.0754adc9.js",
+    "static/js/787.b8288670.chunk.js": "/nguyenhainam_store/static/js/787.b8288670.chunk.js",
+    "static/media/red_clothes.svg": "/nguyenhainam_store/static/media/red_clothes.8207db73da5a13d24e1add22a76263b0.svg",
+    "static/media/women_walk.svg": "/nguyenhainam_store/static/media/women_walk.e53502a29420e10eb0959e1d174002ae.svg",
+    "static/media/men_handbag.svg": "/nguyenhainam_store/static/media/men_handbag.38bbf521b22295df5f913172685e32de.svg",
+    "static/media/orange_hair.svg": "/nguyenhainam_store/static/media/orange_hair.5abb965798b9880384da57b040d10c7c.svg",
+    "static/media/white_tshirt.svg": "/nguyenhainam_store/static/media/white_tshirt.08345b235752820cdc3270143c560595.svg",
+    "static/media/woman_content.svg": "/nguyenhainam_store/static/media/woman_content.d009dc293dfd8aa4256950abd62916f0.svg",
+    "static/media/redwomen.svg": "/nguyenhainam_store/static/media/redwomen.25ef41467578fe1d1c57d3c149a94205.svg",
+    "static/media/cardimage1.svg": "/nguyenhainam_store/static/media/cardimage1.3c3a496f48df5ad203b06341ed212574.svg",
+    "static/media/zara1.svg": "/nguyenhainam_store/static/media/zara1.900f6177a88310c2a25e0a2a358b0dd4.svg",
+    "static/media/zara2.svg": "/nguyenhainam_store/static/media/zara2.e1a326b11c775a0a18c46ac125f762eb.svg",
+    "static/media/right_tree.svg": "/nguyenhainam_store/static/media/right_tree.96275b6f41b47d2e667f9f797e5971e7.svg",
+    "static/media/graphic.svg": "/nguyenhainam_store/static/media/graphic.bb5fff8297fdc764cf62a1a2b02030da.svg",
+    "static/media/salva.svg": "/nguyenhainam_store/static/media/salva.b5923d5150c0a540ea233dfd2337c545.svg",
+    "static/media/travel.svg": "/nguyenhainam_store/static/media/travel.6992073bbef6111b13c1fe92c1477f4b.svg",
+    "static/media/furni.svg": "/nguyenhainam_store/static/media/furni.92432b8e6e52390cf09fb476dc922798.svg",
+    "static/media/payment.svg": "/nguyenhainam_store/static/media/payment.8ae103ac25de9d610128c513d2a35582.svg",
+    "static/media/golden.svg": "/nguyenhainam_store/static/media/golden.39f327d1a78e6f5bd8b5c5c6a0fbca60.svg",
+    "static/media/lefttree.svg": "/nguyenhainam_store/static/media/lefttree.5955ba6fa6bfae09bb4d0088c6dd3e1f.svg",
+    "static/media/slick.svg": "/nguyenhainam_store/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/nguyenhainam_store/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/nguyenhainam_store/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/nguyenhainam_store/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/nguyenhainam_store/index.html",
+    "main.123abefe.css.map": "/nguyenhainam_store/static/css/main.123abefe.css.map",
+    "main.0754adc9.js.map": "/nguyenhainam_store/static/js/main.0754adc9.js.map",
+    "787.b8288670.chunk.js.map": "/nguyenhainam_store/static/js/787.b8288670.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.123abefe.css",
+    "static/js/main.0754adc9.js"
+  ]
+}
