@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import Home from 'containers/Home';
 function App() {
   return (
-    <BrowserRouter  basename={window.location.pathname || ''}>
+    <BrowserRouter >
       <PrimaryLayout>
         <Routes>
-          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/nguyenhainam_store' element={<Home></Home>}></Route>
         </Routes>
       </PrimaryLayout>
     </BrowserRouter>
