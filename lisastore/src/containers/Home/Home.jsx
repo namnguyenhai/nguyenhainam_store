@@ -205,7 +205,7 @@ export const Home = () => {
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>
                 <Card cardimage={Cardimage1} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card> */}
-
+                {/* vl */}
                 {
                     cardarr.map((values,i) => (<Card key={i} cardimage={values.cardimage} status={"hot"} cardinfo={{nameitem:"Calo", typeitem:"Dress", priceitem:"$69"}} height={"500px"} width={"23%"} ></Card>))
                 }
