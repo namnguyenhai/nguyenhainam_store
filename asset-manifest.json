@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nguyenhainam_store/static/css/main.123abefe.css",
-    "main.js": "/nguyenhainam_store/static/js/main.1d0b19b6.js",
+    "main.js": "/nguyenhainam_store/static/js/main.0754adc9.js",
     "static/js/787.b8288670.chunk.js": "/nguyenhainam_store/static/js/787.b8288670.chunk.js",
     "static/media/red_clothes.svg": "/nguyenhainam_store/static/media/red_clothes.8207db73da5a13d24e1add22a76263b0.svg",
     "static/media/women_walk.svg": "/nguyenhainam_store/static/media/women_walk.e53502a29420e10eb0959e1d174002ae.svg",
@@ -27,11 +27,11 @@
     "static/media/slick.woff": "/nguyenhainam_store/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/nguyenhainam_store/index.html",
     "main.123abefe.css.map": "/nguyenhainam_store/static/css/main.123abefe.css.map",
-    "main.1d0b19b6.js.map": "/nguyenhainam_store/static/js/main.1d0b19b6.js.map",
+    "main.0754adc9.js.map": "/nguyenhainam_store/static/js/main.0754adc9.js.map",
     "787.b8288670.chunk.js.map": "/nguyenhainam_store/static/js/787.b8288670.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.123abefe.css",
-    "static/js/main.1d0b19b6.js"
+    "static/js/main.0754adc9.js"
   ]
 }
